@@ -3,37 +3,140 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Chatbox with Bootstrap</title>
+    <title>Question Modal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Modal Styling */
+        .custom-modal {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: white;
+            border: 2px solid #ffc107;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(255, 193, 7, 0.3);
+        }
+
+        .modal-header {
+            border-bottom: 1px solid #ffc107;
+            background: rgba(255, 193, 7, 0.1);
+        }
+
+        /* Input Fields */
+        .custom-input {
+            background-color: #000;
+            color: white;
+            border: 1px solid #ffc107;
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+        .custom-input::placeholder {
+            color: #aaa;
+        }
+
+        .custom-input:focus {
+            background-color: #000;
+            color: white;
+            box-shadow: 0 0 10px rgba(255, 193, 7, 0.6);
+            border-color: #ffc107;
+        }
+
+        /* Button */
+        .btn-custom {
+            background-color: #ffc107;
+            color: black;
+            border-radius: 25px;
+            font-weight: 600;
+            padding: 10px 35px;
+        }
+
+        .btn-custom:hover {
+            background-color: #ffca2c;
+            color: black;
+        }
+    </style>
 </head>
 
-<body class="bg-light">
-    <div class="card d-flex justify-content-center align-items-center min-vh-100">
-        <div class="card shadow" style="max-width: 400px; height: 500px;">
-            <div class="card-header bg-primary text-white text-center">
-                <h5 class="mb-0">Chat with Sakshi</h5>
-            </div>
-            <div class="card-body overflow-auto bg-light" style="height: 400px;">
-                <div class="mb-2 p-2 rounded bg-secondary text-white" style="max-width: 80%;">Hello! Good Morning.</div>
-                <div class="mb-2 p-2 rounded bg-primary text-white ms-auto" style="max-width: 80%;">Hi, Good morning
-                    sir.</div>
-                <div class="mb-2 p-2 rounded bg-secondary text-white" style="max-width: 80%;">Tell me about Yourself
+<body>
+
+    <!-- Center Button -->
+    <div class="container text-center mt-5">
+        <h2 class="text-warning mb-3">Have a Question?</h2>
+        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#questionModal">
+            <i class="fas fa-question-circle me-2"></i>Click Here
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="questionModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content custom-modal">
+
+                <div class="modal-header">
+                    <h5 class="modal-title text-warning fw-bold">
+                        <i class="fas fa-question-circle me-2"></i>Have a Question?
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="mb-2 p-2 rounded bg-primary text-white ms-auto" style="max-width: 80%;">I'm Sakshi Taksande,
-                    a B.Tech student in Computer Science.</div>
-                <div class="mb-2 p-2 rounded bg-secondary text-white" style="max-width: 80%;">That's great! What are
-                    your interests in tech?</div>
-            </div>
-            <div class="card-footer">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Type your question here..."abled>
-                    <button class="btn btn-primary" disabled>Send</button>
+
+                <div class="modal-body p-4">
+                    <p class="text-center text-muted mb-4">
+                        Feel free to ask me anything! I'll get back to you soon.
+                    </p>
+
+                    <form action="mailto:sakshitaksande46@gmail.com" method="post" enctype="text/plain">
+
+                        <div class="mb-3">
+                            <label class="form-label text-warning">
+                                <i class="fas fa-user me-2"></i>Your Name
+                            </label>
+                            <input type="text" class="form-control custom-input" placeholder="Enter your full name"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label text-warning">
+                                <i class="fas fa-envelope me-2"></i>Your Email
+                            </label>
+                            <input type="email" class="form-control custom-input" placeholder="Enter your email address"
+                                required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label text-warning">
+                                <i class="fas fa-comment me-2"></i>Your Question
+                            </label>
+                            <textarea class="form-control custom-input" rows="4" placeholder="Ask your question here..."
+                                required></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-custom">
+                                <i class="fas fa-paper-plane me-2"></i>Send Question
+                            </button>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

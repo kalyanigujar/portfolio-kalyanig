@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: 'Roboto', Arial, sans-serif;
-            background: #f4f4f4;
+            background: linear-gradient(135deg, #f4f4f4 0%, #e9ecef 100%);
             margin: 0;
             padding: 0;
             color: #333;
@@ -32,11 +32,13 @@
             max-width: 1000px;
             margin: 40px auto;
             background: #fff;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             display: grid;
             grid-template-columns: 1fr 2fr;
             grid-gap: 30px;
             padding: 0;
+            border-radius: 15px;
+            overflow: hidden;
             animation: slideUp 1.2s ease-out;
         }
 
@@ -53,11 +55,25 @@
         }
 
         .left-column {
-            background: #4B2C83;
-            color: #fff;
+            background: linear-gradient(135deg, #ffc107 0%, #ff8c00 100%);
+            /* Warning color gradient */
+            color: #000;
+            /* Dark text for contrast */
             padding: 30px;
             text-align: center;
             animation: slideInLeft 1.5s ease-out;
+            position: relative;
+        }
+
+        .left-column::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px 0 0 15px;
         }
 
         @keyframes slideInLeft {
@@ -77,14 +93,19 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #fff;
+            border: 5px solid #333;
+            /* Changed border to dark gray for better contrast with black background */
             margin-bottom: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            z-index: 1;
+            background-color: #000;
+            /* Black background for the circle */
         }
 
         .profile-img:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
 
         .left-column h1 {
@@ -92,6 +113,8 @@
             margin-bottom: 20px;
             font-weight: 700;
             animation: fadeInUp 1.8s ease-out;
+            position: relative;
+            z-index: 1;
         }
 
         @keyframes fadeInUp {
@@ -108,6 +131,8 @@
 
         .contact {
             margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
         }
 
         .contact p {
@@ -117,12 +142,13 @@
         }
 
         .contact a {
-            color: #fff;
+            color: #000;
             text-decoration: none;
+            font-weight: 500;
         }
 
         .contact a:hover {
-            color: #ddd;
+            color: #333;
             transform: translateX(5px);
             transition: all 0.3s ease;
         }
@@ -134,12 +160,14 @@
         .section-left {
             margin-bottom: 30px;
             animation: fadeInUp 2s ease-out;
+            position: relative;
+            z-index: 1;
         }
 
         .section-left h2 {
             font-size: 1.4em;
             margin-bottom: 15px;
-            border-bottom: 2px solid #fff;
+            border-bottom: 2px solid #000;
             padding-bottom: 5px;
             font-weight: 600;
         }
@@ -153,10 +181,14 @@
             margin-bottom: 10px;
             font-size: 0.95em;
             transition: transform 0.3s ease;
+            padding: 5px 0;
         }
 
         .section-left li:hover {
             transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            padding-left: 10px;
         }
 
         .right-column {
@@ -177,10 +209,11 @@
         }
 
         .right-column h2 {
-            color: #4B2C83;
+            color: #ffc107;
+            /* Warning color for headings */
             font-size: 1.6em;
             margin-bottom: 15px;
-            border-bottom: 2px solid #4B2C83;
+            border-bottom: 2px solid #ffc107;
             padding-bottom: 5px;
             font-weight: 600;
             animation: fadeInUp 1.8s ease-out;
@@ -208,6 +241,7 @@
 
         ul li:hover {
             transform: translateX(5px);
+            color: #ffc107;
         }
 
         .declaration {
@@ -216,6 +250,10 @@
             color: #777;
             margin-top: 40px;
             animation: fadeInUp 2.5s ease-out;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ffc107;
         }
 
         @media (max-width: 768px) {
@@ -225,6 +263,11 @@
 
             .left-column {
                 padding: 20px;
+                border-radius: 15px 15px 0 0;
+            }
+
+            .left-column::before {
+                border-radius: 15px 15px 0 0;
             }
 
             .profile-img {
@@ -241,13 +284,14 @@
 
         <!-- Left Column -->
         <div class="left-column">
-        <img src="images/WhatsApp_Image_2025-11-21_at_10.21.19-removebg-preview.png" alt="Sakshi Taksande" class="profile-img">
+            <img src="images/WhatsApp_Image_2025-11-21_at_10.21.19-removebg-preview.png" alt="Sakshi Taksande"
+                class="profile-img">
 
             <h1>Sakshi Taksande</h1>
             <div class="contact">
                 <p><i class="fas fa-envelope"></i> <a
                         href="mailto:sakshitaksande46@gmail.com">sakshitaksande46@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i><a>+91-9325298055</a></p>
+                <p><i class="fas fa-phone"></i><a href="tel:+91-9325298055">+91-9325298055</a></p>
                 <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/sakshi-taksande"
                         target="_blank">linkedin.com/in/sakshi-taksande</a></p>
                 <p><i class="fab fa-github"></i> <a href="https://github.com/sakshitaksande46-droid"
