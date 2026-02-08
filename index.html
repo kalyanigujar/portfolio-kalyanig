@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Google Fonts for Professional Typography -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -26,7 +25,7 @@
             padding: 0;
             line-height: 1.6;
         }
-
+        
         .video-background {
             position: fixed;
             top: 0;
@@ -36,39 +35,39 @@
             overflow: hidden;
             z-index: -1;
         }
-
+        
         .video-background video {
             width: 100%;
             height: 100%;
             object-fit: cover;
             filter: brightness(30%) blur(1px);
         }
-
+        
         .navbar {
             background-color: rgba(0, 0, 0, 0.8) !important;
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 193, 7, 0.3);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
-
+        
         .navbar-brand {
             color: #ffc107 !important;
             font-weight: 700;
             font-size: 1.5rem;
         }
-
+        
         .nav-link {
             color: #ffffff !important;
             font-weight: 500;
             transition: all 0.3s ease;
             padding: 10px 15px;
         }
-
+        
         .nav-link:hover {
             color: #ffc107 !important;
             transform: translateY(-2px);
         }
-
+        
         .hero-section {
             min-height: 100vh;
             display: flex;
@@ -76,21 +75,20 @@
             padding: 100px 0;
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 193, 7, 0.1) 100%);
         }
-
+        
         .hero-section h1 {
             font-size: 4rem;
             font-weight: 700;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
-
+        
         .hero-section h5 {
             color: #0e3742;
             text-shadow: none;
             animation: animate 5s linear infinite;
         }
-
+        
         @keyframes animate {
-
             0%,
             18%,
             20%,
@@ -103,7 +101,6 @@
                 color: #0e3742;
                 text-shadow: none;
             }
-
             18.1%,
             20.1%,
             30%,
@@ -117,7 +114,7 @@
                 text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 30px #03bcf4;
             }
         }
-
+        
         .hero-image img {
             width: 450px;
             height: 450px;
@@ -127,12 +124,12 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 15px 25px rgba(255, 193, 7, 0.5);
         }
-
+        
         .hero-image img:hover {
             transform: scale(1.05);
             box-shadow: 0 20px 40px rgba(255, 193, 7, 0.7);
         }
-
+        
         .btn-custom {
             background: linear-gradient(45deg, #ffc107, #ff8c00);
             border: none;
@@ -145,18 +142,18 @@
             font-size: 1.1rem;
             box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
         }
-
+        
         .btn-custom:hover {
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 10px 25px rgba(255, 193, 7, 0.5);
             color: #000;
         }
-
+        
         .section {
             padding: 80px 0;
             position: relative;
         }
-
+        
         .section-title {
             font-size: 2.5rem;
             font-weight: 700;
@@ -164,7 +161,7 @@
             text-align: center;
             margin-bottom: 20px;
         }
-
+        
         .section-divider {
             width: 100px;
             height: 4px;
@@ -172,7 +169,7 @@
             margin: 0 auto 40px;
             border-radius: 2px;
         }
-
+        
         .card {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 193, 7, 0.3);
@@ -182,43 +179,43 @@
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
-
+        
         .card:hover {
             transform: translateY(-10px) scale(1.02);
             box-shadow: 0 20px 40px rgba(255, 193, 7, 0.3);
             border-color: #ffc107;
         }
-
+        
         .card-img-top {
             height: 200px;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
-
+        
         .card:hover .card-img-top {
             transform: scale(1.05);
         }
-
+        
         .card-title a {
             color: #ffc107 !important;
             text-decoration: none;
         }
-
+        
         .card-title a:hover {
             color: #ff8c00 !important;
         }
-
+        
         .progress {
             height: 10px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 5px;
         }
-
+        
         .progress-bar {
             background: linear-gradient(45deg, #ffc107, #ff8c00);
             transition: width 0.6s ease;
         }
-
+        
         .contact-item {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 193, 7, 0.3);
@@ -232,13 +229,13 @@
             flex-direction: column;
             justify-content: center;
         }
-
+        
         .contact-item:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(255, 193, 7, 0.3);
             border-color: #ffc107;
         }
-
+        
         .contact-icon {
             width: 60px;
             height: 60px;
@@ -251,7 +248,7 @@
             font-size: 1.5rem;
             color: #000;
         }
-
+        
         .social-icon {
             width: 50px;
             height: 50px;
@@ -265,18 +262,18 @@
             text-decoration: none;
             color: #ffc107;
         }
-
+        
         .social-icon:hover {
             background: #ffc107;
             color: #000;
             transform: scale(1.1);
         }
-
+        
         .timeline {
             position: relative;
             padding-left: 50px;
         }
-
+        
         .timeline::before {
             content: '';
             position: absolute;
@@ -287,12 +284,12 @@
             background: linear-gradient(to bottom, #ffc107, #ff8c00);
             border-radius: 2px;
         }
-
+        
         .timeline-item {
             margin-bottom: 40px;
             position: relative;
         }
-
+        
         .timeline-item::before {
             content: '';
             position: absolute;
@@ -305,7 +302,7 @@
             border: 4px solid #ffffff;
             box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
         }
-
+        
         footer {
             background: rgba(0, 0, 0, 0.9);
             padding: 30px 0;
@@ -313,33 +310,30 @@
             color: #ffffff;
             border-top: 1px solid rgba(255, 193, 7, 0.3);
         }
-
+        
         footer a {
             color: #ffc107;
             margin: 0 15px;
             font-size: 1.8rem;
             transition: all 0.3s ease;
         }
-
+        
         footer a:hover {
             color: #ffffff;
             transform: scale(1.2);
         }
-
+        
         @media (max-width: 768px) {
             .hero-section h1 {
                 font-size: 2.5rem;
             }
-
             .hero-image img {
                 width: 300px;
                 height: 300px;
             }
-
             .timeline {
                 padding-left: 20px;
             }
-
             .btn-custom {
                 padding: 12px 25px;
                 font-size: 1rem;
@@ -351,17 +345,16 @@
 <body>
     <div class="video-background">
         <video autoplay muted loop>
-            <source src="/images/WhatsApp Video 2025-12-01 at 10.48.40.mp4" type="video/mp4">
+            <source src="C:\Users\admin\Downloads\sakshiportfolio\sakshiportfolio\images\Untitled design.mp4" type="video/mp4">
         </video>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">
-                <i class="fas fa-user-circle me-2"></i>Sakshi Taksande
+                <i class="fas fa-user-circle me-2"></i>kalyani gujar
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -397,28 +390,26 @@
         </div>
     </nav>
 
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section ms-5">
         <div class="container-fluid">
             <div class="row align-items-center min-vh-100">
                 <div class="col-lg-6 text-center text-lg-start">
-                    <h6 class="text-warning ms-5">Hello!</h6>
-                    <h1 class="fw-bold ms-5">I'm <span class="text-warning">Sakshi</span></h1>
-                    <h1 class="fw-bold"><span class="text-warning ms-5">Taksande</span></h1>
-                    <h5 class="animate-text fw-bold ms-5" data-bs-toggle="tooltip" data-bs-placement="top"
-                        title="Hover effect: Computer Science Animation ">Computer Science</h5>
-                    <p class="lead ms-5">Student | Learner | Developer</p>
-                    <div class="mt-4 ms-5">
-                        <a href="https://www.linkedin.com/in/sakshi-taksande-9387042b6" class="btn btn-custom me-3"
-                            target="_blank">
+                    <h6 class="text-warning ms-2">Hello!</h6>
+                    <h1 class="fw-bold ms-2">I'm <span class="text-warning">kalyani</span></h1>
+                    <h1 class="fw-bold"><span class="text-warning ms-2">Gujar</span></h1>
+                    <h5 class="animate-text fw-bold ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Hover effect: Computer Science Animation ">Computer Science</h5>
+                    <p class="lead ms-2">Student | Learner | Developer</p>
+                    <div class="mt-4 ms-2">
+                        <a href="https://www.linkedin.com/in/kalyani-gujar-939590203" class="btn btn-custom me-3" target="_blank">
                             <i class="fab fa-linkedin me-2 "></i>LinkedIn
                         </a>
-                        <a href="https://github.com/sakshitaksande46-droid" class="btn btn-custom" target="_blank">
+                        <a href="https://github.com/kalyanigujar" class="btn btn-custom" target="_blank">
                             <i class="fab fa-github me-2 "></i>My Works
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center mt-5 mt-lg-0 hero-image">
-                    <img src="images/WhatsApp_Image_2025-11-21_at_10.21.19-removebg-preview.png" alt="Sakshi Taksande">
+                    <img src="C:\Users\admin\Downloads\sakshiportfolio\sakshiportfolio\images\kprofile.jpeg" alt="kalyani gujar Profile Image" class="img-fluid rounded-circle">
                 </div>
             </div>
         </div>
@@ -429,10 +420,8 @@
             <h2 class="section-title">About Me</h2>
             <div class="section-divider"></div>
             <p class="lead text-center mb-5">
-                I am Sakshi Taksande, a B.Tech CSE 3rd-year student. I am currently doing a full-stack development
-                internship where I am learning both frontend and backend skills. I enjoy working on websites, improving
-                my coding abilities, and gaining practical experience through real projects. I am eager to learn more
-                and grow as a full-stack developer.
+                I am kalyani gujar, a BSC CS student. I am currently doing a full-stack development internship where I am learning both frontend and backend skills. I enjoy working on websites, improving my coding abilities, and gaining practical experience through real
+                projects. I am eager to learn more and grow as a full-stack developer.
             </p>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
@@ -440,22 +429,19 @@
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col-md-4 text-center">
-                                    <img src="images/WhatsApp_Image_2025-11-21_at_10.21.19-removebg-preview.png"
-                                        alt="Profile Image" class="img-fluid rounded-circle mb-3"
-                                        style="width: 200px; height: 200px; object-fit: cover; border: 5px ;">
+                                    <img src="C:\Users\admin\Downloads\sakshiportfolio\sakshiportfolio\images\kprofile.jpeg" alt="Profile Image" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px; object-fit: cover; border: 5px ;">
                                 </div>
                                 <div class="col-md-8">
-                                    <p><strong><i class="fas fa-user me-2"></i>Name:</strong> Sakshi Taksande</p>
-                                    <p><strong><i class="fas fa-briefcase me-2"></i>Job Role:</strong> Full Stack
-                                        Developer</p>
+                                    <p><strong><i class="fas fa-user me-2"></i>Name:</strong> kalyani gujar</p>
+                                    <p><strong><i class="fas fa-briefcase me-2"></i>Job Role:</strong> Full Stack Developer
+                                    </p>
                                     <p><strong><i class="fas fa-clock me-2"></i>Experience:</strong> Fresher</p>
-                                    <p><strong><i class="fas fa-map-marker-alt me-2"></i>Address:</strong> Radhakrishna
-                                        Nagar Pipla, Nagpur, Maharashtra, India</p>
+                                    <p><strong><i class="fas fa-map-marker-alt me-2"></i>Address:</strong> IT park, Nagpur, Maharashtra, India</p>
                                     <h4 class="text-warning mt-4"><i class="fas fa-tools me-2"></i>Skills</h4>
                                     <div class="mb-3">
                                         <div class="d-flex justify-content-between">
                                             <span>HTML, CSS</span>
-                                          
+
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar" style="width: 80%"></div>
@@ -464,7 +450,7 @@
                                     <div class="mb-3">
                                         <div class="d-flex justify-content-between">
                                             <span>WordPress</span>
-                                           
+
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar" style="width: 60%"></div>
@@ -473,7 +459,7 @@
                                     <div class="mb-3">
                                         <div class="d-flex justify-content-between">
                                             <span>Bootstrap (Frontend)</span>
-                                         
+
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar" style="width: 70%"></div>
@@ -482,7 +468,7 @@
                                     <div class="mb-3">
                                         <div class="d-flex justify-content-between">
                                             <span>UIUX design</span>
-                                           
+
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar" style="width: 80%"></div>
@@ -490,11 +476,38 @@
                                     </div>
                                     <div class="mb-3">
                                         <div class="d-flex justify-content-between">
-                                            <span>C, C++</span>
-                                           
+                                            <span>power BI</span>
+
                                         </div>
                                         <div class="progress">
-                                            <div class="progress-bar" style="width: 65%"></div>
+                                            <div class="progress-bar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between">
+                                            <span>SEO</span>
+
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 80%"></div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>C/C++</span>
+
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 80%"></div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <span>JavaScript</span>
+
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" style="width: 80%"></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -504,6 +517,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <section id="resume" class="section">
@@ -511,16 +525,9 @@
             <h2 class="section-title">Resume</h2>
             <div class="section-divider"></div>
             <p class="lead text-center mb-5">
-                As a B.Tech CSE student passionate about full-stack development, I have developed practical skills in
-                designing, developing, and deploying web applications. I enjoy working with modern frameworks and tools
-                to
-                build clean interfaces and reliable backend systems. Through academic projects and internship
-                experience, I
-                have strengthened my understanding of coding practices, debugging, teamwork, and user-centric design. I
-                am
-                committed to continuous learning, improving my technical abilities, and taking on challenges that help
-                me
-                grow professionally.
+                As a BSC CS student passionate about full-stack development, I have developed practical skills in designing, developing, and deploying web applications. I enjoy working with modern frameworks and tools to build clean interfaces and reliable backend systems.
+                Through academic projects and internship experience, I have strengthened my understanding of coding practices, debugging, teamwork, and user-centric design. I am committed to continuous learning, improving my technical abilities, and taking
+                on challenges that help me grow professionally.
             </p>
             <div class="text-center mb-5">
                 <a href="cv.html" class="btn btn-custom">
@@ -534,9 +541,9 @@
                             <div class="card-icon">
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
-                            <h5 class="card-title">2023 - 2026</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Bachelor of Engineering in Computer Science
-                                Engineering</h6>
+                            <h5 class="card-title">2021 - 2023</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Bachelor of Engineering in Computer Science Engineering
+                            </h6>
                             <p class="card-text">Grade: First class with Distinction</p>
                         </div>
                     </div>
@@ -547,13 +554,10 @@
                             <div class="card-icon">
                                 <i class="fas fa-school"></i>
                             </div>
-                            <h5 class="card-title">2022 - 2023</h5>
+                            <h5 class="card-title">2018 - 2020</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Higher Secondary Certificate (HSC)</h6>
                             <p class="card-text">
-                                Board: Maharashtra State Nagpur<br>
-                                HSC Percentage: 60.83%<br>
-                                SSC Percentage: 80%<br>
-                                JEE Main Percentile: 70 Percentile
+                                Board: Maharashtra State Nagpur<br> HSC Percentage: 60.83%<br> SSC Percentage: 80%<br> JEE Main Percentile: 70 Percentile
                             </p>
                         </div>
                     </div>
@@ -561,181 +565,99 @@
             </div>
         </div>
     </section>
-
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="section-divider"></div>
+
             <p class="lead text-center mb-5">
-                I have created a professional profile showcasing my skills, education, and technical strengths, along
-                with
-                uploading projects that demonstrate my practical knowledge and hands-on experience. Each project
-                reflects my
-                ability to understand real-world problems, design effective solutions, and implement them using the
-                right
-                tools and technologies. Through this work, I aim to present a clear picture of my capabilities,
-                creativity,
-                and commitment to continuous learning. My portfolio and projects collectively highlight my readiness to
-                take
-                on new opportunities and grow in a professional environment.
+                Below are some of the key projects I have worked on during my learning and internship journey.
             </p>
+
             <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+                <!-- Project 1 : Full Stack -->
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://i.pinimg.com/736x/5d/e6/31/5de63102937d14a8350c852d3bf689be.jpg"
-                            class="card-img-top" alt="PaperTube">
+                        <img src="C:\Users\admin\Downloads\sakshiportfolio\sakshiportfolio\images\FULL STACK.jpg" class="card-img-top" alt="Full Stack Project">
+
                         <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="https://paper-tube.vercel.app/" target="_blank">
-                                    <i class="fas fa-external-link-alt me-2"></i>PaperTube
-                                </a>
+                            <h5 class="card-title text-warning">
+                                Full Stack Food Ordering System
                             </h5>
+
                             <p class="card-text">
-                                Welcome to Paper Tube — a platform where creativity meets technology. Here, I transform
-                                ideas on paper into real, working projects that showcase my technical expertise,
-                                problem-solving skills, and passion for innovation. Whether you're looking to explore my
-                                work or collaborate on something new, you'll find my projects are driven by thoughtful
-                                design, clean code, and practical solutions.
+                                A full-stack food ordering system where users can browse menus, place orders, manage carts, and track orders. Built using frontend, backend, and database technologies.
                             </p>
+
+                            <a href="https://github.com/kalyanigujar" target="_blank" class="btn btn-custom btn-sm">
+                           View Project
+                        </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 2 : Software Testing -->
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://i.pinimg.com/1200x/07/0e/30/070e3000df9132f72ff30e1f1762da1f.jpg"
-                            class="card-img-top" alt="WorkHub">
+                        <img src="C:\Users\admin\Downloads\sakshiportfolio\sakshiportfolio\images\1project.jpg" class="card-img-top" alt="Software Testing Project">
+
                         <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="https://www.workhub.com/" target="_blank">
-                                    <i class="fas fa-external-link-alt me-2"></i>WorkHub
-                                </a>
+                            <h5 class="card-title text-warning">
+                                Software Testing Project
                             </h5>
+
                             <p class="card-text">
-                                Explore a variety of projects built using modern tools like React, Next.js, JavaScript,
-                                and
-                                more. Each project demonstrates my ability to plan, design, and build practical
-                                solutions—from simple interfaces to dynamic, interactive applications.
+                                A manual testing project including test case writing, bug tracking, reporting, and QA validation to ensure software reliability and performance.
                             </p>
+
+                            <a href="https://github.com/kalyanigujar" target="_blank" class="btn btn-custom btn-sm">
+                           View Project
+                        </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 3 : Learning Website -->
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://i.pinimg.com/736x/d9/c9/ca/d9c9ca3071f052121f8c70ccd8b0e89b.jpg"
-                            class="card-img-top" alt="E-commerce">
+                        <img src="C:\Users\admin\Downloads\sakshiportfolio\sakshiportfolio\images\lerning.jpg" class="card-img-top" alt="Learning Website">
+
                         <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="https://www.asos.com/" target="_blank">
-                                    <i class="fas fa-external-link-alt me-2"></i>E-commerce
-                                </a>
+                            <h5 class="card-title text-warning">
+                                Learning Website (Bootstrap)
                             </h5>
+
                             <p class="card-text">
-                                Explore e-commerce projects built using React, Next.js, JavaScript, and modern APIs.
-                                Each
-                                project demonstrates my capability to build scalable online stores with clean
-                                architecture
-                                and polished user interfaces.
+                                A responsive learning website built using HTML, CSS, and Bootstrap with multiple pages and mobile-friendly UI for educational content browsing.
                             </p>
+
+                            <a href="https://github.com/kalyanigujar" target="_blank" class="btn btn-custom btn-sm">
+                           View Project
+                        </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center mt-5">
-                <h3 class="text-warning mb-3">More Projects on GitHub</h3>
-                <div class="section-divider"></div>
-                <p class="lead mb-4">I enjoy solving real-world problems and exploring data-driven insights.</p>
-                <a href="https://github.com/sakshitaksande46-droid" class="btn btn-custom" target="_blank">
-                    <i class="fab fa-github me-2"></i>Visit GitHub
-                </a>
+
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="section-divider"></div>
-            <p class="lead text-center mb-5">Below are the details to reach out to me!</p>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
-                <div class="col">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h6>ADDRESS</h6>
-                        <p>Nagpur, Maharashtra</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <h6>CONTACT NUMBER</h6>
-                        <p>+91 9325298055</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h6>EMAIL ADDRESS</h6>
-                        <p>sakshitaksande46@gmail.com</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-file-download"></i>
-                        </div>
-                        <h6>DOWNLOAD RESUME</h6>
-                        <p><a href="#" class="text-warning text-decoration-none">Resume Link</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-5">
-                <h4 class="text-warning mb-3">Have a Question?</h4>
-                <a href="question.html" class="btn btn-custom">
-                    <i class="fas fa-question-circle me-2"></i>Click Here
-                </a>
-            </div>
-            <div class="text-center mt-5">
-                <h5 class="text-warning mb-4">Find me on</h5>
-                <a href="#" class="social-icon" title="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://linkedin.com/in/sakshi-taksande" class="social-icon" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="social-icon" title="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="social-icon" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Sakshi Taksande. All rights reserved.</p>
+            <p>&copy; 2023 kalyani Gujar. All rights reserved.</p>
             <div class="social-links">
-                <a href="#" class="text-warning me-3"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-warning me-3"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kalyani-gujar-939590203" class="text-warning me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/kalyanigujar" class="text-warning me-3"><i class="fab fa-github"></i></a>
                 <a href="#" class="text-warning"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
